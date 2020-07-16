@@ -1,0 +1,184 @@
+body{
+    width: 100%;
+    height: 100%;
+}
+
+h1{
+    float: left;
+    color: white;
+    text-align: center;
+    padding:  14px 16px;
+    text-decoration: none;
+    font-size: 35px;
+}
+
+main{
+    margin: 0 auto;
+    width: 900px;
+    float: left;
+    position: relative;
+  
+}
+
+.header-1{
+
+}
+
+
+
+.logo{
+    float: left; 
+    margin-left: 40px;
+    width: 30%;
+}
+
+
+
+ 
+/* Estilize a barra de navegação */
+#navbar {
+    overflow: hidden;
+    background-color: aliceblue;
+  }
+  
+  /* Navbar links */
+  #navbar a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding:  14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+   /* Alterar a cor dos links ao passar o mouse */
+   #navbar a:hover {
+    background-color: #2085AF;
+    color:white;
+  }
+
+   /* Adicione uma cor ao link ativo / atual */
+   #navbar a.active {
+    background-color: #5167A0;
+    color: white;
+  }
+
+  /* Conteúdo da página */
+  .content {
+    padding: 16px;
+  }
+  
+  /* A classe sticky é adicionada à barra de navegação com JS quando atinge sua posição de rolagem */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Adicione algum preenchimento superior ao conteúdo da página para evitar movimentos rápidos repentinos (como a barra de navegação obtém uma nova posição na parte superior da página (posição: fixa e superior: 0) */
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+
+  #betta2{
+    float: left; 
+    margin-left: 40px;
+    width: 30%;
+  }
+
+  * {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Ocultar as imagens por padrão */
+.mySlides {
+  display: none;
+}
+
+/* Botões Próximo e Anterior */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Posicione o "próximo botão" à direita */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Ao passar o mouse, adicione uma cor de fundo preto com um pouco de transparência */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Texto da legenda */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Texto do número (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Os pontos / marcadores / indicadores */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Animação esmaecida */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
