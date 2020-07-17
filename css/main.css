@@ -12,6 +12,13 @@ h1{
     font-size: 35px;
 }
 
+h2 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: white;
+}
+
 main{
     margin: 0 auto;
     width: 900px;
@@ -87,6 +94,9 @@ main{
     width: 30%;
   }
 
+
+
+  
   * {box-sizing:border-box}
 
 /* Slideshow container */
