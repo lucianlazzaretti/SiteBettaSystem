@@ -32,7 +32,7 @@ main{
 }
 
 
-
+  /*Dimensão e posicionamento da logomarca*/
 .logo{
     float: left; 
     margin-left: 40px;
@@ -87,7 +87,7 @@ main{
     padding-top: 60px;
   }
 
-
+  /*Dimensão e posicionamento da logomarca*/
   #betta2{
     float: left; 
     margin-left: 40px;
