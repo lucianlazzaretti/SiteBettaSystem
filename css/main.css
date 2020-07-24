@@ -186,6 +186,7 @@ main{
   /* Adicione algum preenchimento superior ao conteúdo da página para evitar movimentos rápidos repentinos (como a barra de navegação obtém uma nova posição na parte superior da página (posição: fixa e superior: 0) */
   .sticky + .content {
     padding-top: 60px;
+  
   }
 
 
