@@ -26,6 +26,17 @@ h3 {
   color: #111;
 }
 
+h4 {
+  float: right;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 0px;
+  padding:  14px 16px;
+  font: 14px "Lato",sans-serif;
+  color: black;
+  margin-right: 40px;
+  margin: auto;
+}
 
 main{
     margin: 0 auto;
@@ -145,7 +156,7 @@ main{
  
 /* Estilize a barra de navegação */
 #navbar {
-    overflow: hidden;
+    overflow: hidden ;
     background-color: aliceblue;
   }
   
@@ -189,6 +200,20 @@ main{
   
   }
 
+  .voltar-ao-topo {
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 12px;
+    padding: 1em;
+    display: none;
+}
+.voltar-ao-topo:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
 
   .coluna{
     float: left;
