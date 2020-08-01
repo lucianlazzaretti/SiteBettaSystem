@@ -1,18 +1,17 @@
-
-h1{
-    float: left;
-    text-align: center;
-    padding:  14px 16px;
-    text-decoration: none;
-    font-size: 35px;
-    color: white;
+h1 {
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 35px;
+  color: white;
 }
 
 h2 {
   float: right;
   text-align: center;
   letter-spacing: 0px;
-  padding:  14px 16px;
+  padding: 14px 16px;
   font: 12px "Lato", sans-serif;
   color: white;
   margin-right: 50px;
@@ -31,209 +30,108 @@ h4 {
   text-align: center;
   font-weight: bold;
   letter-spacing: 0px;
-  padding:  14px 16px;
-  font: 14px "Lato",sans-serif;
+  padding: 14px 16px;
+  font: 14px "Lato", sans-serif;
   color: black;
   margin-right: 40px;
   margin: auto;
 }
 
-main{
-    margin: 0 auto;
-    width: 400px;
-    float: left;
-    position: relative;
-  
+main {
+  margin: 0 auto;
+  width: 400px;
+  float: left;
+  position: relative;
 }
 
-    /*Imagem de fundo e configurações do body*/
-    body {
-      font-family: 'Assistant';
-      font-size: 22px;
-      background-image: url(./img/fundo2.jpg);
-      width: 100%;
-      height: 100%;
-      background-position: center;
-      background-attachment: fixed;
-      background-size: cover;
+/*Dimensão e posicionamento da logomarca*/
 
-    }
-
-    /*Fonte utilizada da api do google*/
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-family: "Raleway", sans-serif
-    }
-
-
-    /* Criar o efeito de rolagem de paralaxe */
-    .bgimg-1,
-    .bgimg-2,
-    .bgimg-3,
-    .bgimg-4 {
-      position: relative;
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-
-    }
-
-    /* A imagem usada , 100% de altura */
-    .bgimg-1 {
-      background-image: url(./img/fundo2.jpg);
-      min-height: 100%;
-    }
-
-    .bgimg-2 {
-      background-image: url(./img/fundo4.jpg);
-      min-height: 400px;
-    }
-
-    .bgimg-3 {
-      background-image: url(./img/fundo5.jpg);
-      min-height: 400px;
-    }
-
-    .bgimg-4 {
-      background-image: url(./img/fundo6.jpg);
-      min-height: 400px;
-    }
-
-    .caption {
-      position: absolute;
-      left: 0;
-      top: 50%;
-      width: 100%;
-      text-align: center;
-      color: #000;
-    }
-
-    .caption span.border {
-      background-color: #111;
-      opacity: 0.80;
-      color: #fff;
-      padding: 18px;
-      font-size: 25px;
-      letter-spacing: 6px;
-    }
-
-
-    /* Desativar a rolagem de paralaxe para tablets e smartphones */
-    @media only screen and (max-device-width: 1024px) {
-
-      .bgimg-1,
-      .bgimg-2,
-      .bgimg-3,
-      .bgimg-4{
-        background-attachment: scroll;
-      }
-    }
-
-
-
-  /*Dimensão e posicionamento da logomarca*/
-.logo{
-    float: left; 
-    margin-left: 70px;
-    margin-right: 10px;
-    width: 30%;
-    position:relative;
-    overflow: hidden;
+.logo {
+  float: left;
+  margin-left: 70px;
+  margin-right: 10px;
+  width: 30%;
+  position: relative;
+  overflow: hidden;
 }
 
-.logo img{
+.logo img {
   max-height: auto;
-  max-width:100%;
-  height:auto;
-  position:relative;
+  max-width: 100%;
+  height: auto;
+  position: relative;
 }
- 
+
 /* Estilize a barra de navegação */
+
 #navbar {
-    overflow: hidden ;
-    background-color: aliceblue;
-  }
-  
-  /* Navbar links */
-  #navbar a {
-    float: left;
-    display: block;
-    color: black;
-    text-align: center;
-    padding:  14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-   /* Alterar a cor dos links ao passar o mouse */
-   #navbar a:hover {
-    background-color: #2085AF;
-    color:white;
-  }
+  overflow: hidden;
+  background-color: aliceblue;
+}
 
-   /* Adicione uma cor ao link ativo / atual */
-   #navbar a.active {
-    background-color: #5167A0;
-    color: white;
-  }
+/* Navbar links */
 
-  /* Conteúdo da página */
-  .content {
-    padding: 16px;
-  }
-  
-  /* A classe sticky é adicionada à barra de navegação com JS quando atinge sua posição de rolagem */
-  .sticky {
-    position: fixed;
-    top: 0;
+#navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Alterar a cor dos links ao passar o mouse */
+
+#navbar a:hover {
+  background-color: #2085AF;
+  color: white;
+}
+
+/* Adicione uma cor ao link ativo / atual */
+
+#navbar a.active {
+  background-color: #5167A0;
+  color: white;
+}
+
+/* Conteúdo da página */
+
+.content {
+  padding: 16px;
+}
+
+/* A classe sticky é adicionada à barra de navegação com JS quando atinge sua posição de rolagem */
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Adicione algum preenchimento superior ao conteúdo da página para evitar movimentos rápidos repentinos (como a barra de navegação obtém uma nova posição na parte superior da página (posição: fixa e superior: 0) */
+
+.sticky+.content {
+  padding-top: 60px;
+}
+
+.coluna {
+  float: left;
+  width: 25%;
+  font-size: 17px;
+  letter-spacing: 0px;
+  margin: auto;
+}
+
+@media screen and (max-width: 500px) {
+  .column {
     width: 100%;
   }
-  
-  /* Adicione algum preenchimento superior ao conteúdo da página para evitar movimentos rápidos repentinos (como a barra de navegação obtém uma nova posição na parte superior da página (posição: fixa e superior: 0) */
-  .sticky + .content {
-    padding-top: 60px;
-  
-  }
-
-  .voltar-ao-topo {
-    position: fixed;
-    bottom: 2em;
-    right: 2em;
-    text-decoration: none;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.3);
-    font-size: 12px;
-    padding: 1em;
-    display: none;
-}
-.voltar-ao-topo:hover {
-    background-color: rgba(0, 0, 0, 0.6);
-}
-
-  .coluna{
-    float: left;
-    width: 25%;
-    font-size: 17px;
-    letter-spacing: 0px;
-    margin: auto;
- 
-  }
-    
-  @media screen and (max-width: 500px) {
-    .column {
-      width: 100%;
-    }
-
-      /*Dimensão e posicionamento da logomarca*/
-  .logofinal{
-    float: center; 
+  /*Dimensão e posicionamento da logomarca*/
+  .logofinal {
+    float: center;
     margin-left: 90px;
     margin-right: 10px;
     position: relative;
-    }
   }
+}
